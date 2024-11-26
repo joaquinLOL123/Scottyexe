@@ -1,0 +1,6 @@
+<!DOCTYPE codename-mod-options>
+
+<menu name="Scotty options" desc="Scotty options.">
+	<checkbox id="showSplash" name="Splash videos" desc='Whether to show the "Mod by scotty fan" videos on startup.' />
+	<checkbox id="showReplay" name="Replay messages" desc='Whether to show replay messages on the main menu after death' />
+</menu>

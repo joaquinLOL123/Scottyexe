@@ -1,0 +1,23 @@
+{
+    "params": [
+        {
+            "name": "New character",
+            "type": "String"
+        },
+        {
+            "name": "change Icon?",
+            "type": "Bool",
+            "defaultValue": true
+        },
+        {
+            "name": "Strumline ID",
+            "type": "Int(0, 99, 1)",
+            "defaultValue": "0"
+        },
+        {
+            "name": "Strumline character ID",
+            "type": "Int(0, 99, 1)",
+            "defaultValue": "0"
+        }
+    ]
+}

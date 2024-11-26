@@ -1,0 +1,16 @@
+{
+    "animations": [
+        {
+            "percent": 20,
+            "anim": "neutral",
+            "offsets": [0, -10],
+            "fps": 24
+        },
+        {
+            "percent": 0,
+            "anim": "losing",
+            "offsets": [-20, 8],
+            "fps": 24
+        }
+    ]
+}

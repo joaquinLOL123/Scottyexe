@@ -1,0 +1,6 @@
+<!DOCTYPE codename-engine-dialogue-character>
+<character x="250" y="0" textSound="dialogue/MRTalk">
+	<anim name="normal" anim="neutral" fps="0" />
+	<anim name="question" anim="question" fps="0" />
+	<anim name="panic" anim="panic" fps="0" x="15" y="-10"/>
+</character>

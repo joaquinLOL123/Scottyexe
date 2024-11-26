@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character x="160" y="140" sprite="mr flipaclip" flipX="true" camy="100" camx="-20" isPlayer="true" icon="mr" antialiasing="false" holdTime="3.5">
+	<anim name="idle" anim="idle" x="-5" y="-20" fps="12" loop="false"/>
+	<anim name="singUP" anim="up" x="-5" y="-22" fps="12" loop="false"/>
+	<anim name="singLEFT" anim="left" x="-6" y="-21" fps="12" loop="false"/>
+	<anim name="singRIGHT" anim="right" x="-8" y="-17" fps="12" loop="false"/>
+	<anim name="singDOWN" anim="down" x="-5" y="-20" fps="12" loop="false"/>
+</character>

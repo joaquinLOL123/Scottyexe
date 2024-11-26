@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="small fountain.png" width="447" height="425">
+	<SubTexture name="fountain close0000" x="0" y="0" width="90" height="251" frameX="-14" frameY="-0" frameWidth="119" frameHeight="259"/>
+	<SubTexture name="fountain close0001" x="0" y="0" width="90" height="251" frameX="-14" frameY="-0" frameWidth="119" frameHeight="259"/>
+	<SubTexture name="fountain close0002" x="271" y="0" width="90" height="227" frameX="-14" frameY="-4" frameWidth="119" frameHeight="259"/>
+	<SubTexture name="fountain close0003" x="271" y="0" width="90" height="227" frameX="-14" frameY="-4" frameWidth="119" frameHeight="259"/>
+	<SubTexture name="fountain close0004" x="0" y="335" width="219" height="90" rotated="true" frameX="-14" frameY="-8" frameWidth="119" frameHeight="259"/>
+	<SubTexture name="fountain close0005" x="0" y="335" width="219" height="90" rotated="true" frameX="-14" frameY="-8" frameWidth="119" frameHeight="259"/>
+	<SubTexture name="fountain close0006" x="362" y="0" width="85" height="183" frameX="-18" frameY="-62" frameWidth="119" frameHeight="259"/>
+	<SubTexture name="fountain close0007" x="362" y="0" width="85" height="183" frameX="-18" frameY="-62" frameWidth="119" frameHeight="259"/>
+	<SubTexture name="fountain close0008" x="316" y="228" width="103" height="101" rotated="true" frameX="-12" frameY="-152" frameWidth="119" frameHeight="259"/>
+	<SubTexture name="fountain close0009" x="316" y="228" width="103" height="101" rotated="true" frameX="-12" frameY="-152" frameWidth="119" frameHeight="259"/>
+	<SubTexture name="fountain close0010" x="235" y="250" width="24" height="118" rotated="true" frameX="-0" frameY="-231" frameWidth="119" frameHeight="259"/>
+	<SubTexture name="fountain close0011" x="235" y="250" width="24" height="118" rotated="true" frameX="-0" frameY="-231" frameWidth="119" frameHeight="259"/>
+	<SubTexture name="fountain close0012" x="181" y="250" width="1" height="1" frameX="-0" frameY="-0" frameWidth="119" frameHeight="259"/>
+	<SubTexture name="fountain close0013" x="181" y="250" width="1" height="1" frameX="-0" frameY="-0" frameWidth="119" frameHeight="259"/>
+	<SubTexture name="fountain loop0000" x="91" y="0" width="89" height="251" frameX="-0" frameY="-0" frameWidth="89" frameHeight="253"/>
+	<SubTexture name="fountain loop0001" x="91" y="0" width="89" height="251" frameX="-0" frameY="-0" frameWidth="89" frameHeight="253"/>
+	<SubTexture name="fountain loop0002" x="181" y="0" width="89" height="249" frameX="-0" frameY="-4" frameWidth="89" frameHeight="253"/>
+	<SubTexture name="fountain loop0003" x="181" y="0" width="89" height="249" frameX="-0" frameY="-4" frameWidth="89" frameHeight="253"/>
+	<SubTexture name="fountain open0000" x="220" y="369" width="50" height="29" frameX="-13" frameY="-203" frameWidth="82" frameHeight="234"/>
+	<SubTexture name="fountain open0001" x="220" y="369" width="50" height="29" frameX="-13" frameY="-203" frameWidth="82" frameHeight="234"/>
+	<SubTexture name="fountain open0002" x="271" y="228" width="44" height="191" frameX="-17" frameY="-42" frameWidth="82" frameHeight="234"/>
+	<SubTexture name="fountain open0003" x="271" y="228" width="44" height="191" frameX="-17" frameY="-42" frameWidth="82" frameHeight="234"/>
+	<SubTexture name="fountain open0004" x="0" y="252" width="234" height="82" rotated="true" frameX="-0" frameY="-0" frameWidth="82" frameHeight="234"/>
+	<SubTexture name="fountain open0005" x="0" y="252" width="234" height="82" rotated="true" frameX="-0" frameY="-0" frameWidth="82" frameHeight="234"/>
+</TextureAtlas>

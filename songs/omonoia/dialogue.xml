@@ -1,0 +1,51 @@
+<!DOCTYPE codename-engine-dialogue>
+<dialogue box="scotty">
+	<!-- All characters -->
+	<char name="scotty" char="scotty" position="left" />
+	<char name="mr" char="mr" position="right" />
+
+	<!-- Lines -->
+	<line background="black">
+		Once upon a time somewhere around 2 AM,
+		<format color="#526250">Multiple Republics</format> (aka MR) was scavenging for berries in a forest.
+	</line>
+	<line background="black">
+		What they don't know was that they chose to travel at a bad time.
+		As during 3 AM, someone... Or something, lurked in the bushes.
+	</line>
+	<line background="black">
+		Ofcourse,<format color="#526250"> MR</format> was unaware of this.
+		and so their scavenge for food would soon end up<format color="#ff0000"> futile</format>.
+	</line>
+	<line char="mr" background="mr_wander"> 
+		Jeez, why did i pick such an activity at this time, am i stupid?
+	</line>
+	<line char="mr" background="mr_wander"> 
+		I don't remember thinking about going here at such time...
+	</line>
+	<line char="scotty" changeDefAnim="black" background="bush">
+		*rustling*
+	</line>
+    <line char="mr" changeDefAnim="question" background="bush">
+		What was that?
+	</line>
+	<line char="scotty" speed="0.2" background="bush">
+		Peekaboo.
+	</line>
+	<line char="mr" background="bush">
+		Oh hey! You..? are you perhaps also collecting berries at such time?
+		weird, right?
+	</line>
+	<line char="mr" changeDefAnim="question" background="bush">
+		Could you... tell me where the directions are...
+	</line>
+	<line background="black" playSound="Lights_Shut_off">
+		<format color="#526250">MR</format> passes out... Until 33 minutes later (3:33 AM)
+	</line>
+	<line char="mr" changeDefAnim="question" background="black">
+		Huh..? wait... where the..
+	</line>
+	<line char="mr" changeDefAnim="panic" background="black">
+		WHERE THE FUCK AM I?!
+	</line>
+</dialogue>

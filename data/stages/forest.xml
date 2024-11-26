@@ -1,0 +1,72 @@
+<!DOCTYPE codename-engine-stage>
+<stage folder="stages/" startCamPosX="600" startCamPosY="500" zoom="0.9">
+
+
+	<sprite scrolly="0.5" x="-568" y="-145" sprite="forest/sky" type="none" zoomfactor="0.75" scrollx="0.5" name="sky"/>
+
+	<sprite scrolly="0.7" x="-247" y="252" sprite="forest/backdrop" scrollx="0.6" name="backdropL">
+		<property type="bool" value="true" name="flipX"/>
+	</sprite>
+
+	<sprite scrolly="0.7" x="814" y="272" sprite="forest/backdrop" scrollx="0.6" name="backdropR"/>
+
+	<sprite x="-382" y="394" sprite="forest/grounf" name="ground"/>
+
+
+	<sprite scrolly="0.3" x="-606" y="-500" sprite="omonoia/sky" type="none" zoomfactor="0.8" name="skyScary">
+		<property type="bool" value="false" name="visible"/>
+	</sprite>
+
+	<sprite scrolly="0.4" x="-122" y="-73" sprite="omonoia/buildings layer 1" scrollx="0.6" name="buildScary1">
+		<property type="bool" value="false" name="visible"/>
+	</sprite>
+
+	<sprite scrolly="0.6" x="-831" y="-133" sprite="omonoia/buildings layer 2" scrollx="0.7" name="buildScary2">
+		<property type="bool" value="false" name="visible"/>
+	</sprite>
+
+	<sprite scrolly="0.6" x="-1100" y="-405" sprite="omonoia/fireoverlay" scrollx="0.4" name="fireOverlay">
+		<property type="bool" value="false" name="visible"/>
+	</sprite>
+
+	<sprite x="500" y="250" zoomfactor="0.85" scale="5" type="loop" scrollx="0.7" name="fireScary" scrolly="0.3" sprite="omonoia/fire">
+		<property type="bool" value="false" name="visible"/>
+	</sprite>
+
+	<sprite x="-711" y="283" sprite="omonoia/floating island" name="islandScary">
+		<property type="bool" value="false" name="visible"/>
+	</sprite>
+
+	<sprite x="724" y="42" sprite="omonoia/big fountain" type="none" name="fountainMain">
+		<anim x="0" loop="false" y="0" fps="24" anim="fountain open" name="open"/>
+		<anim x="5" loop="true" y="50" fps="24" anim="fountain loop" type="loop" name="idle"/>
+		<anim x="15" loop="false" y="50" fps="24" anim="fountain close" type="none" name="close"/>
+		<property type="bool" value="false" name="visible"/>
+	</sprite>
+
+	<sprite x="512" sprite="omonoia/small fountain" y="128" type="none" name="fountainL">
+		<anim loop="false" x="-10" anim="fountain open" fps="24" y="-20" type="none" name="open"/>
+		<anim loop="true" x="0" anim="fountain loop" fps="24" y="0" type="loop" name="idle"/>
+		<anim loop="false" x="10" anim="fountain close" fps="24" y="0" type="none" name="close"/>
+		<property type="bool" value="false" name="visible"/>
+	</sprite>
+
+	<sprite x="961" sprite="omonoia/small fountain" y="128" type="none" name="fountainR">
+		<anim loop="false" x="5" anim="fountain open" fps="24" y="-20" type="none" name="open"/>
+		<anim loop="true" x="0" anim="fountain loop" fps="24" y="0" type="loop" name="idle"/>
+		<anim loop="false" x="5" anim="fountain close" fps="24" y="0" type="none" name="close"/>
+		<property type="bool" value="true" name="flipX"/>
+		<property type="bool" value="false" name="visible"/>
+	</sprite>
+
+	
+
+	<sprite x="130" sprite="flipaclip/paperBG" y="210" scale="1.3" type="none" name="flipaclipBG" antialiasing="false">
+		<property type="bool" name="visible" value="false"/>
+	</sprite>
+
+	<gf x="522" scrolly="1" y="288" scrollx="1"/>
+	<dad x="139" y="30"/>
+	<bf x="729" y="58"/>
+	<combo x="550" y="550"/>
+</stage>
