@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character y="350" sprite="mr" flipX="true" camy="100" isPlayer="true" icon="mr" color="#488758">
+<character y="350" sprite="mr" flipX="true" camy="150" isPlayer="true" icon="mr" color="#488758">
 	<anim name="idle" anim="MR IDLE" x="-5" y="-20" fps="24" loop="false"/>
 	<anim name="singUP" anim="MR UP" x="-5" y="-22" fps="24" loop="false"/>
 	<anim name="singLEFT" anim="MR LEFT" x="-6" y="-16" fps="24" loop="false"/>

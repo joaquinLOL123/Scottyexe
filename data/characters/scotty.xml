@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character y="450" sprite="scotty" camx="150" camy="200" icon="scotty-animated" color="#3F6586" holdTime="6.1" animatedIcon="true">
+<character y="450" sprite="scotty" camx="100" camy="250" color="#3F6586" holdTime="6.1">
 	<anim name="idle" anim="scotty idle" x="0" y="0" fps="24" loop="true"/>
 	<anim name="singUP" anim="scotty up" x="3" y="60" fps="24" loop="false"/>
 	<anim name="singLEFT" anim="scotty left" x="38" y="25" fps="24" loop="false"/>

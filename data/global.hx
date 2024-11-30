@@ -3,8 +3,6 @@ import ExtraCoolUtil;
 import hxvlc.util.Handle;
 import hxvlc.flixel.FlxVideo;
 import funkin.backend.utils.WindowUtils;
-import funkin.menus.TitleState;
-import funkin.menus.MainMenuState;
 import lime.app.Application;
 import openfl.system.Capabilities;
 
@@ -18,11 +16,7 @@ var redirectStates:Map<FlxState, String> = [
 ]; // :^)
 
 function new() {
-	trace("start");
-
-	Handle.initAsync([], function(isDone) {
-		trace("finished hxvlc InitAsync: " + isDone);
-	});
+	Handle.initAsync([]);
 
 	WindowUtils.set_winTitle("SCOTTY.EXE");
 	changeWinSize(960, 720);

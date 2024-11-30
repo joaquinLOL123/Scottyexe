@@ -4,7 +4,6 @@ import flixel.ui.FlxBar;
 import Sys;
 
 public var black:FunkinSprite = new FunkinSprite().makeSolid(FlxG.width, FlxG.height, FlxColor.BLACK);
-public var white:FunkinSprite = new FunkinSprite().makeSolid(FlxG.width, FlxG.height, FlxColor.WHITE);
 
 public var scotScene:FlxVideoSprite = new FlxVideoSprite(0, 0);
 public var healthDrain:Bool = false;
@@ -22,6 +21,7 @@ public var quickTimeVals = { time: 2.2, timeLeft: 0 };
 function create() {
     WindowUtils.set_winTitle("the forest..?");
     loadVideo();
+    player.cpu = true;
 
     maxCamZoom = 2.5;
 }
@@ -40,12 +40,14 @@ function postCreate() {
     quickTimeText.font = Paths.font("times new roman.ttf");
     quickTimeText.cameras = [camHUD];
     quickTimeText.screenCenter(FlxAxes.X);
+    quickTimeText.antialiasing = true;
     quickTimeBar.y = (quickTimeText.y + quickTimeText.height);
 
     quickTimeBarBG = new FlxSprite().loadGraphic(Paths.image("game/healthBar"));
     quickTimeBarBG.setGraphicSize(258, 19);
     quickTimeBarBG.screenCenter(FlxAxes.X);
     quickTimeBarBG.y = quickTimeBar.y - 4;
+    quickTimeBarBG.antialiasing = true;
     quickTimeBarBG.cameras = [camHUD];
     
     quickTimeEvent.add(quickTimeBarBG);
@@ -92,12 +94,12 @@ function onSongEnd() {
 
 function onGameOver() {
     FlxG.save.data.afterDeath = true;
-    FlxG.save.flush();
-    Sys.exit(0);
+    window.close();
 }
 
 function destroy() {
     WindowUtils.set_winTitle("SCOTTY.EXE");
+    FlxG.camera.bgColor = FlxColor.BLACK;
 }
 
 function loadVideo() {

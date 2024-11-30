@@ -38,7 +38,7 @@ function stepHit(curStep) {
                 scotScene.visible = true;
             });
 
-            for (sprite in [iconP2A, iconP1, healthBar, healthBarBG, scoreTxt, accuracyTxt, missesTxt])      
+            for (sprite in [scotIcon, iconP1, healthBar, healthBarBG, scoreTxt, accuracyTxt, missesTxt])      
                 sprite.visible = false;
         case 3473:
             black.visible = false;
@@ -55,9 +55,14 @@ function stepHit(curStep) {
             });
 
             quickTimeEvent.visible = true;
+
+            
         case 3504:
-            white.scrollFactor.set(0, 0);
-            white.zoomFactor = 0;
+            for (sprite in stage.stageSprites.iterator())
+                if (omonoiaSprites.contains(sprite))
+                    sprite.alpha = 0;
+
+            camGame.bgColor = FlxColor.WHITE;
 
             dad.playAnim("singLEFT", true, "LOCK");
 
@@ -66,7 +71,6 @@ function stepHit(curStep) {
                     char.animateAtlas.colorTransform.color = 0x000000;
                 else 
                     char.colorTransform.color = 0x000000;
-            insert(members.indexOf(dad), white);
 
             sparkParticles.kill();
             remove(sparkParticles);

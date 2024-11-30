@@ -29,8 +29,4 @@ class ExtraCoolUtil extends flixel.FlxBasic {
         
         return null;
     }
-
-    public static function getXMLAtt(node:Xml, att:String):Null<String> {
-        return node.exists(att) ? node.get(att) : null;
-    }
 }

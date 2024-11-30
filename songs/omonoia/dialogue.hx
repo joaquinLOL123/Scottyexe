@@ -41,7 +41,7 @@ function close(event) {
     for (sprite in [dialogueBox, dialogueBox.text]) {
         sprite.visible = false;
     }
-    for (s=>char in charMap) {
+    for (char in charMap.iterator()) {
         char.visible = false;
     }
 

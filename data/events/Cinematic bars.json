@@ -3,12 +3,12 @@
         {
             "name": "enable",
             "type": "Bool",
-            "defaultValue": true
+            "defaultValue": "true"
         },
         {
             "name": "duration (Steps)",
             "type": "Int(0, 999, 1)",
-            "defaultValue": true
+            "defaultValue": "16"
         }, 
         {
             "name": "Tween ease",

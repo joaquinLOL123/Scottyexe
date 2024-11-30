@@ -16,7 +16,7 @@ function postCreate() {
 function playBubbleAnim() {
     line++;
 
-    for (str=>bg in backgrounds) {
+    for (bg in backgrounds.iterator()) {
         if (bg == backgroundMap.get(line)) {
             bg.visible = true;
         } else {

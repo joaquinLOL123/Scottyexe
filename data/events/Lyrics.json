@@ -1,0 +1,17 @@
+{
+    "params": [
+        {
+            "name": "Text",
+            "type": "String"
+        },
+        {
+            "name": "Y Offset",
+            "type": "Int(-999, 999, 1)"
+        },
+        {
+            "name": "Action",
+            "type": "DropDown('New', 'Add', 'Clear')",
+            "defaultValue": "New"
+        }
+    ]
+}

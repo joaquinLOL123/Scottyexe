@@ -7,21 +7,20 @@ public var overlay:FunkinSprite;
 public var camCentered:Bool = false;
 var isOmonoia:Bool = false;
 
-var forestSprites:Array<FlxSprite>;
-var omonoiaSprites:Array<FlxSprite>;
-
-
+public var forestSprites:Array<FlxSprite>;
+public var omonoiaSprites:Array<FlxSprite>;
 
 public var chromAberration:CustomShader;
 public var heatWave:CustomShader;
 public var sparkParticles:FlxTypedEmitter<FlxSprite>;
+
 var basket:ClickableFlxSprite;
 var islandGroup:FlxSpriteGroup = new FlxSpriteGroup();
 
 final FLIPACLIP_TEXT_DIST:Int = 100;
 
 final FLIPACLIP_CHARACTER_X = 100;
-final FLIPACLIP_CHARACTER_Y = 30;
+final FLIPACLIP_CHARACTER_Y = 20;
 
 function repositionBasket() {
     basket.x = (boyfriend.x + boyfriend.width) - basket.width;
@@ -43,6 +42,7 @@ function postCreate() {
             FlxTween.tween(spr, {alpha: 0}, 0.1);
     }
     basket.canSelect = false;
+    basket.antialiasing = true;
 
     insert(members.indexOf(boyfriend) + 1, basket);
     insert(members.indexOf(islandScary), islandGroup);
@@ -78,16 +78,16 @@ function update(elapsed) {
         for (sprite in [islandGroup, boyfriend, dad, comboGroup, basket])
             sprite.y += (Math.sin(time * 2) / 4);
 
+        if (basket.hovering)
+            basket.color = FlxColor.GRAY;
+        else
+            basket.color = FlxColor.WHITE;
+
         if (!Options.gameplayShaders) return;
         if (chromAberration != null)
             if (chromIntensity > 0.0012)
                 setChromIntensity(CoolUtil.fpsLerp(chromIntensity, 0.00005, 0.05));
         heatWave.hset("iTime", time);
-
-        if (basket.hovering)
-            basket.color = FlxColor.GRAY;
-        else
-            basket.color = FlxColor.WHITE;
     }   
 }
 
@@ -116,8 +116,6 @@ function omonoiaOhioMode() {
     overlay.blend = ExtraCoolUtil.getBlendModeFromString("ADD");
 
     fireOverlay.blend = ExtraCoolUtil.getBlendModeFromString("ADD");
-
-    defaultCamZoom = 0.6;
 
     boyfriend.setPosition(1020, 10);
     basket.x = (boyfriend.x + boyfriend.width) - basket.width;
@@ -220,17 +218,6 @@ function toggleFountain() {
         else
             fountain.playAnim("open");
     }
-}
-
-function centerCamera() {
-    curCameraTarget = -1;
-
-    var dadCamPos = dad.getCameraPosition();
-    var bfCamPos = boyfriend.getCameraPosition();
-
-    var midPoint:FlxPoint = FlxPoint.get((bfCamPos.x + dadCamPos.x) / 2, (bfCamPos.y + dadCamPos.y) / 2);
-    camFollow.x = midPoint.x;
-    camFollow.y = midPoint.y;
 }
 
 function initFountains() {

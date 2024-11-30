@@ -129,10 +129,13 @@
 		{
 			"params": [
 				0.9,
-				false
+				false,
+				4,
+				"back",
+				"InOut"
 			],
-			"time": 37985.6115107914,
-			"name": "Change default zoom"
+			"name": "Camera ease zoom",
+			"time": 37553.9568345324
 		},
 		{
 			"params": [
@@ -207,6 +210,17 @@
 		},
 		{
 			"params": [
+				0.9,
+				false,
+				8,
+				"sine",
+				"In"
+			],
+			"name": "Camera ease zoom",
+			"time": 54388.4892086331
+		},
+		{
+			"params": [
 				160
 			],
 			"time": 55251.7985611511,
@@ -272,14 +286,19 @@
 		},
 		{
 			"params": [
-				0.3,
-				true,
-				4,
-				"sine",
-				"InOut"
+				12,
+				0.1
 			],
-			"name": "Camera ease zoom",
+			"name": "Camera Modulo Change",
 			"time": 79251.7985611511
+		},
+		{
+			"params": [
+				1,
+				1
+			],
+			"name": "Camera Modulo Change",
+			"time": 79626.7985611511
 		},
 		{
 			"params": [
@@ -334,7 +353,7 @@
 			"params": [
 				false,
 				-1543,
-				4,
+				16,
 				"camHUD"
 			],
 			"time": 91251.7985611511,
@@ -380,7 +399,7 @@
 		{
 			"params": [
 				"centerCamera",
-				"true"
+				""
 			],
 			"name": "HScript Call",
 			"time": 115251.798561151
@@ -583,14 +602,6 @@
 		},
 		{
 			"params": [
-				"centerCamera",
-				"false"
-			],
-			"name": "HScript Call",
-			"time": 139251.798561151
-		},
-		{
-			"params": [
 				true,
 				-1,
 				16,
@@ -721,8 +732,16 @@
 		},
 		{
 			"params": [
+				0.6,
+				false
+			],
+			"name": "Change default zoom",
+			"time": 165231.18000445
+		},
+		{
+			"params": [
 				"centerCamera",
-				"true"
+				""
 			],
 			"name": "HScript Call",
 			"time": 175128.087220945
@@ -745,14 +764,6 @@
 		},
 		{
 			"params": [
-				"centerCamera",
-				"false"
-			],
-			"name": "HScript Call",
-			"time": 180231.18000445
-		},
-		{
-			"params": [
 				1
 			],
 			"name": "Camera Movement",
@@ -769,7 +780,7 @@
 		{
 			"params": [
 				"centerCamera",
-				"true"
+				""
 			],
 			"name": "HScript Call",
 			"time": 181159.015055996
@@ -784,11 +795,10 @@
 		},
 		{
 			"params": [
-				"centerCamera",
-				"false"
+				1
 			],
-			"name": "HScript Call",
-			"time": 182550.767633316
+			"time": 182550.767633316,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
@@ -801,16 +811,16 @@
 		{
 			"params": [
 				"centerCam",
-				"true"
+				""
 			],
 			"name": "HScript Call",
 			"time": 189973.448045687
 		},
 		{
 			"params": [
-				1,
+				0.4,
 				true,
-				64,
+				32,
 				"quad",
 				"InOut"
 			],
@@ -826,14 +836,6 @@
 			],
 			"name": "Cinematic bars",
 			"time": 189973.448045687
-		},
-		{
-			"params": [
-				"centerCam",
-				"false"
-			],
-			"name": "HScript Call",
-			"time": 191519.839798264
 		},
 		{
 			"params": [
@@ -923,7 +925,7 @@
 		{
 			"params": [
 				"centerCamera",
-				"true"
+				""
 			],
 			"name": "HScript Call",
 			"time": 210695.097530223
@@ -941,7 +943,7 @@
 		},
 		{
 			"params": [
-				0.1,
+				0.05,
 				true
 			],
 			"name": "Change default zoom",
@@ -949,7 +951,7 @@
 		},
 		{
 			"params": [
-				0.1,
+				0.05,
 				true
 			],
 			"time": 211468.293406512,
@@ -957,7 +959,7 @@
 		},
 		{
 			"params": [
-				0.1,
+				0.05,
 				true
 			],
 			"name": "Change default zoom",
@@ -967,7 +969,7 @@
 			"params": [
 				true,
 				2,
-				36,
+				35,
 				"sine",
 				"In"
 			],
@@ -976,8 +978,16 @@
 		},
 		{
 			"params": [
-				3,
-				true,
+				0.5,
+				false
+			],
+			"time": 212241.489282801,
+			"name": "Change default zoom"
+		},
+		{
+			"params": [
+				2,
+				false,
 				16,
 				"back",
 				"In"
@@ -987,13 +997,11 @@
 		},
 		{
 			"params": [
-				false,
-				-1,
-				16,
-				"camHUD"
+				"centerCamera",
+				""
 			],
-			"time": 214715.716086924,
-			"name": "Camera Flash"
+			"name": "HScript Call",
+			"time": 214715.716086924
 		},
 		{
 			"params": [
@@ -1016,7 +1024,7 @@
 		{
 			"params": [
 				4,
-				0.1
+				0.4
 			],
 			"time": 214715.716086924,
 			"name": "Camera Modulo Change"
@@ -1029,6 +1037,24 @@
 				0
 			],
 			"name": "Change character",
+			"time": 214715.716086924
+		},
+		{
+			"params": [
+				false,
+				-1,
+				16,
+				"camHUD"
+			],
+			"name": "Camera Flash",
+			"time": 214715.716086924
+		},
+		{
+			"params": [
+				0.8,
+				false
+			],
+			"name": "Change default zoom",
 			"time": 214715.716086924
 		},
 		{
@@ -1051,14 +1077,6 @@
 			],
 			"name": "Camera Flash",
 			"time": 254303.344952904
-		},
-		{
-			"params": [
-				"centerCamera",
-				"false"
-			],
-			"time": 254303.344952904,
-			"name": "HScript Call"
 		},
 		{
 			"params": [
@@ -1208,6 +1226,15 @@
 		},
 		{
 			"params": [
+				"MY-",
+				-100,
+				"New"
+			],
+			"time": 273323.963509605,
+			"name": "Lyrics"
+		},
+		{
+			"params": [
 				2,
 				0.5
 			],
@@ -1236,6 +1263,42 @@
 		},
 		{
 			"params": [
+				"MY HATRED",
+				0,
+				"New"
+			],
+			"time": 274097.159385893,
+			"name": "Lyrics"
+		},
+		{
+			"params": [
+				"For",
+				0,
+				"New"
+			],
+			"time": 276416.747014759,
+			"name": "Lyrics"
+		},
+		{
+			"params": [
+				" Turkey's",
+				0,
+				"Add"
+			],
+			"name": "Lyrics",
+			"time": 276571.386190017
+		},
+		{
+			"params": [
+				" only",
+				0,
+				"Add"
+			],
+			"name": "Lyrics",
+			"time": 277189.942891048
+		},
+		{
+			"params": [
 				true,
 				4.5,
 				16,
@@ -1244,6 +1307,213 @@
 			],
 			"time": 277808.499592079,
 			"name": "Scroll Speed Change"
+		},
+		{
+			"params": [
+				"GROWING",
+				0,
+				"New"
+			],
+			"time": 277808.499592079,
+			"name": "Lyrics"
+		},
+		{
+			"params": [
+				" MUCH",
+				0,
+				"Add"
+			],
+			"name": "Lyrics",
+			"time": 278427.05629311
+		},
+		{
+			"params": [
+				" MORE",
+				0,
+				"Add"
+			],
+			"name": "Lyrics",
+			"time": 278736.334643625
+		},
+		{
+			"params": [
+				" WORSE.",
+				0,
+				"Add"
+			],
+			"name": "Lyrics",
+			"time": 279045.612994141
+		},
+		{
+			"params": [
+				"",
+				0,
+				"Clear"
+			],
+			"name": "Lyrics",
+			"time": 279664.169695172
+		},
+		{
+			"params": [
+				"Won't",
+				0,
+				"New"
+			],
+			"time": 279973.448045687,
+			"name": "Lyrics"
+		},
+		{
+			"params": [
+				" you",
+				0,
+				"Add"
+			],
+			"name": "Lyrics",
+			"time": 280901.283097234
+		},
+		{
+			"params": [
+				" say...",
+				0,
+				"Add"
+			],
+			"name": "Lyrics",
+			"time": 281519.839798264
+		},
+		{
+			"params": [
+				"That I'm",
+				0,
+				"New"
+			],
+			"time": 282293.035674553,
+			"name": "Lyrics"
+		},
+		{
+			"params": [
+				" VERY",
+				0,
+				"Add"
+			],
+			"time": 282756.953200326,
+			"name": "Lyrics"
+		},
+		{
+			"params": [
+				" TURKOPHOBIC!",
+				0,
+				"Add"
+			],
+			"name": "Lyrics",
+			"time": 283375.509901357
+		},
+		{
+			"params": [
+				"Cause to be honest...",
+				0,
+				"New"
+			],
+			"name": "Lyrics",
+			"time": 284921.901653935
+		},
+		{
+			"params": [
+				"Turkey's kinda CRINGE",
+				0,
+				"New"
+			],
+			"name": "Lyrics",
+			"time": 286468.293406512
+		},
+		{
+			"params": [
+				"So",
+				0,
+				"New"
+			],
+			"name": "Lyrics",
+			"time": 288014.685159089
+		},
+		{
+			"params": [
+				" won't",
+				0,
+				"Add"
+			],
+			"name": "Lyrics",
+			"time": 288323.963509605
+		},
+		{
+			"params": [
+				" you",
+				0,
+				"Add"
+			],
+			"name": "Lyrics",
+			"time": 288633.24186012
+		},
+		{
+			"params": [
+				"LIVE",
+				0,
+				"New"
+			],
+			"name": "Lyrics",
+			"time": 288942.520210636
+		},
+		{
+			"params": [
+				"WITH",
+				0,
+				"New"
+			],
+			"name": "Lyrics",
+			"time": 290179.633612697
+		},
+		{
+			"params": [
+				"THAT",
+				0,
+				"New"
+			],
+			"name": "Lyrics",
+			"time": 291416.747014759
+		},
+		{
+			"params": [
+				"AND",
+				0,
+				"New"
+			],
+			"name": "Lyrics",
+			"time": 292653.860416821
+		},
+		{
+			"params": [
+				"STOP",
+				0,
+				"New"
+			],
+			"name": "Lyrics",
+			"time": 293890.973818883
+		},
+		{
+			"params": [
+				"TROL",
+				0,
+				"New"
+			],
+			"name": "Lyrics",
+			"time": 295128.087220945
+		},
+		{
+			"params": [
+				"LING",
+				0,
+				"Add"
+			],
+			"name": "Lyrics",
+			"time": 296365.200623007
 		},
 		{
 			"params": [
@@ -1256,9 +1526,18 @@
 		{
 			"params": [
 				"centerCamera",
-				"true"
+				""
 			],
 			"name": "HScript Call",
+			"time": 297602.314025069
+		},
+		{
+			"params": [
+				"ME!!!!!!",
+				0,
+				"New"
+			],
+			"name": "Lyrics",
 			"time": 297602.314025069
 		},
 		{
@@ -1266,7 +1545,7 @@
 				0.5,
 				false,
 				16,
-				"back",
+				"elastic",
 				"Out"
 			],
 			"time": 298839.42742713,
@@ -1274,14 +1553,23 @@
 		},
 		{
 			"params": [
-				0.02,
+				"",
+				0,
+				"Clear"
+			],
+			"name": "Lyrics",
+			"time": 298839.42742713
+		},
+		{
+			"params": [
+				0.3,
 				false,
-				168,
+				120,
 				"sine",
-				"InOut"
+				"In"
 			],
 			"name": "Camera ease zoom",
-			"time": 306262.107839502
+			"time": 309045.612994141
 		}
 	],
 	"scrollSpeed": 2.4,
@@ -3933,6 +4221,12 @@
 				},
 				{
 					"id": 3,
+					"sLen": 0,
+					"time": 214870.355262182,
+					"type": 0
+				},
+				{
+					"id": 3,
 					"sLen": 1159.79381443298,
 					"time": 215952.829488986,
 					"type": 0
@@ -4575,7 +4869,7 @@
 				},
 				{
 					"id": 3,
-					"sLen": 386.5979381465,
+					"sLen": 386.597938146791,
 					"time": 267756.953200326,
 					"type": 0
 				},
