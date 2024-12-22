@@ -21,7 +21,6 @@ public var quickTimeVals = { time: 2.2, timeLeft: 0 };
 function create() {
     WindowUtils.set_winTitle("the forest..?");
     loadVideo();
-    player.cpu = true;
 
     maxCamZoom = 2.5;
 }
